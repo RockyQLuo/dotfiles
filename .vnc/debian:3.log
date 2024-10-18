@@ -1,0 +1,19 @@
+
+New Xtigervnc server 'debian:3 (qluo)' on port 5903 for display :3.
+Use xtigervncviewer -SecurityTypes VncAuth,TLSVnc -passwd /tmp/tigervnc.H941zL/passwd debian:3 to connect to the VNC server.
+
+ release 12101006, X.Org
+
+
+Sat Jul 15 12:31:26 2023
+ vncext:      VNC extension running!
+ vncext:      Listening for VNC connections on all interface(s), port 5903
+ vncext:      created VNC server for screen 0
+[mi] mieq: warning: overriding existing handler (nil) with 0x55a6d69ba180 for event 2
+[mi] mieq: warning: overriding existing handler (nil) with 0x55a6d69ba180 for event 3
+3NI3X0 New Xtigervnc server 'debian:3 (qluo)' on port 5903 for display :3.
+3NI3X0 Use xtigervncviewer -SecurityTypes VncAuth,TLSVnc -passwd /tmp/tigervnc.H941zL/passwd debian:3 to connect to the VNC server.
+** Message: 12:31:26.343: main.vala:101: Session is LXDE
+** Message: 12:31:26.343: main.vala:102: DE is LXDE
+** Message: 12:31:26.348: main.vala:133: log directory: /home/qluo/.cache/lxsession/LXDE
+** Message: 12:31:26.348: main.vala:134: log path: /home/qluo/.cache/lxsession/LXDE/run.log

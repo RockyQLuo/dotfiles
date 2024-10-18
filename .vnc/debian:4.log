@@ -1,0 +1,75 @@
+
+Xvnc TigerVNC 1.12.0 - built 2023-01-06 16:01
+Copyright (C) 1999-2021 TigerVNC Team and many others (see README.rst)
+See https://www.tigervnc.org for information on TigerVNC.
+Underlying X server release 12101006, X.Org
+
+
+Fri Jul 14 20:17:18 2023
+ vncext:      VNC extension running!
+ vncext:      Listening for VNC connections on all interface(s), port 5904
+ vncext:      created VNC server for screen 0
+[mi] mieq: warning: overriding existing handler (nil) with 0x560e81810180 for event 2
+[mi] mieq: warning: overriding existing handler (nil) with 0x560e81810180 for event 3
+3NI3X0 New Xtigervnc server 'debian:4 (qluo)' on port 5904 for display :4.
+3NI3X0 Use xtigervncviewer -SecurityTypes VncAuth,TLSVnc -passwd /tmp/tigervnc.JzrbOD/passwd debian:4 to connect to the VNC server.
+QObject: Cannot create children for a parent that is in a different thread.
+(Parent is SplashApp(0x7ffc514b8130), parent's thread is QThread(0x55c93bfdb060), current thread is QThread(0x55c93c3e72b0)
+QObject::installEventFilter(): Cannot filter events for objects in a different thread.
+
+Fri Jul 14 20:17:29 2023
+ Connections: accepted: 172.16.2.65::48470
+ SConnection: Client needs protocol version 3.8
+ SConnection: Client requests security type VncAuth(2)
+
+Fri Jul 14 20:17:33 2023
+ VNCSConnST:  Server default pixel format depth 24 (32bpp) little-endian rgb888
+ VNCSConnST:  Client pixel format depth 6 (8bpp) rgb222
+
+Fri Jul 14 20:17:54 2023
+ VNCSConnST:  closing 172.16.2.65::48470: Clean disconnection
+ EncodeManager: Framebuffer updates: 191
+ EncodeManager:   RRE:
+ EncodeManager:     Solid: 64 rects, 4.03776 Mpixels
+ EncodeManager:            1.0625 KiB (1:3711.88 ratio)
+ EncodeManager:   ZRLE:
+ EncodeManager:     Bitmap RLE: 1 rects, 65.28 kpixels
+ EncodeManager:                 102 B (1:640.118 ratio)
+ EncodeManager:     Indexed RLE: 196 rects, 714.752 kpixels
+ EncodeManager:                  15.627 KiB (1:44.8134 ratio)
+ EncodeManager:   Total: 261 rects, 4.81779 Mpixels
+ EncodeManager:          16.7891 KiB (1:280.417 ratio)
+ Connections: closed: 172.16.2.65::48470
+ ComparingUpdateTracker: 2.3017 Gpixels in / 3.3211 Mpixels out
+ ComparingUpdateTracker: (1:693.051 ratio)
+
+Fri Jul 14 20:18:28 2023
+ Connections: accepted: 172.16.2.65::48480
+ SConnection: Client needs protocol version 3.8
+ SConnection: Client requests security type VncAuth(2)
+
+Fri Jul 14 20:18:31 2023
+ VNCSConnST:  Server default pixel format depth 24 (32bpp) little-endian rgb888
+ VNCSConnST:  Client pixel format depth 6 (8bpp) rgb222
+
+Fri Jul 14 20:18:37 2023
+ VNCSConnST:  closing 172.16.2.65::48480: Clean disconnection
+ EncodeManager: Framebuffer updates: 3
+ EncodeManager:   RRE:
+ EncodeManager:     Solid: 40 rects, 2.32128 Mpixels
+ EncodeManager:            680 B (1:3414.35 ratio)
+ EncodeManager:   ZRLE:
+ EncodeManager:     Indexed RLE: 1 rects, 450 pixels
+ EncodeManager:                  96 B (1:4.8125 ratio)
+ EncodeManager:   Total: 41 rects, 2.32173 Mpixels
+ EncodeManager:          776 B (1:2992.55 ratio)
+ Connections: closed: 172.16.2.65::48480
+ ComparingUpdateTracker: 0 pixels in / 0 pixels out
+ ComparingUpdateTracker: (1:-nan ratio)
+The X session died with signal 15!
+Killing Xtigervnc process ID 9085...Warning: VNC extension does not support -reset, terminating instead. Use -noreset to prevent termination.
+
+Fri Jul 14 20:24:00 2023
+ ComparingUpdateTracker: 0 pixels in / 0 pixels out
+ ComparingUpdateTracker: (1:-nan ratio)
+ success!

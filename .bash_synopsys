@@ -1,0 +1,76 @@
+########################### Synopsys ###############################
+#Set Synopsys Directory
+export Synopsys_Dir=/home/synopsys
+
+#SCL
+export SCL_HOME=$Synopsys_Dir/scl/2018.06
+export PATH=$SCL_HOME/linux64/bin:$PATH
+
+#SNPSLMD_LICENSE_FILE
+export SNPSLMD_LICENSE_FILE=27000@debian
+#export LM_LICENSE_FILE=/home/synopsys/scl/2018.06/admin/license/Synopsys.dat        # license文件的位置
+
+
+#ICC
+export ICC_HOME=$Synopsys_Dir/icc/O-2018.06-SP1
+export PATH=$ICC_HOME/bin:$PATH
+
+#Prime Time
+#export PT_HOME=$Synopsys_Dir/pt2018/pts/O-2018.06-SP1
+#export PATH=$PT_HOME/bin:$PATH
+
+#Verdi
+export Verdi_HOME=$Synopsys_Dir/verdi/Verdi_O-2018.09-SP2
+export PATH=$Verdi_HOME/bin:$PATH
+
+#VCS
+export VCS_HOME=$Synopsys_Dir/vcs/O-2018.09-SP2
+export PATH=$VCS_HOME/bin:$PATH
+#注：在用VCS仿真生成fsdb格式的波形文件的时候，需要NOVAS_HOME变量指向Verdi的安装路径
+export NOVAS_HOME=$Synopsys_Dir/verdi/Verdi_O-2018.09-SP2
+
+#Syn
+export Syn_HOME=$Synopsys_Dir/syn/O-2018.06-SP1
+export PATH=$Syn_HOME/bin:$PATH
+
+#Formality
+#export Formality_HOME=$Synopsys_Dir/formality2018/fm/O-2018.06-SP1
+#export PATH=$Formality_HOME/bin:$PATH
+
+#Starrc
+#export Starrc_HOME=$Synopsys_Dir/starrc2018/starrc/O-2018.06-SP1
+#export PATH=$Starrc_HOME/bin:$PATH
+
+#LC
+#export LC_HOME=$Synopsys_Dir/lc2018/lc/O-2018.06-SP1
+#export PATH=$LC_HOME/bin:$PATH
+#export SYNOPSPS_LC_ROOT=$LC_HOME/linux64/lc/shlib/
+
+#Hspice
+#export Hspice_HOME=$Synopsys_Dir/hspice2017/hspice/N-2017.12-SP2
+#export PATH=$Hspice_HOME/hspice/bin:$PATH
+
+#Custom wave view
+#export Custom_wv_HOME=$Synopsys_Dir/custom_wv2017/wv/N-2017.12-SP2
+#export PATH=$Custom_wv_HOME/bin:$PATH
+
+#Alias
+alias icc="icc_shell"
+alias pt="pt_shell"
+alias ptgui="primetime"
+alias dc="dc_shell"
+alias fm="formality"
+alias starrc="StarXtract"
+alias dv="design_vision"
+alias lc="lc_shell"
+
+
+
+export LD_LIBRARY_PATH=/usr/lib64:/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64
+##############################Start path setting alias#################
+#start up scl
+# alias lmgrd="lmgrd -c /home/synopsys/scl/2018.06/admin/license/license.dat -l /home/synopsys/scl/2018.06/admin/logs/debug.log"
+alias lmgrd_synopsys="lmgrd -c /home/synopsys/scl/2018.06/admin/license/Synopsys.dat -l /home/synopsys/scl/2018.06/admin/logs/debug.log" 
+#shut down scl
+alias lmdown="lmdown -c /home/synopsys/scl/2018.06/admin/license/Synopsys.dat"
+# alias lmdown="lmdown -c /home/synopsys/scl/2018.06/admin/license/license.dat"

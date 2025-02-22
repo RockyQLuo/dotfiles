@@ -1,0 +1,23 @@
+[user]
+	email = luoqi754@gmail.com
+	password = Aa1849639437@
+	name = qluo
+[core]
+	editor = vim
+[color]
+	ui = true
+[safe]
+	directory = /home/qluo/.vim/bundle/Vundle.vim
+	directory = /home/qluo/.vim/bundle/nerdtree
+	directory = /home/qluo/gits/lq_the-way-to-pa
+[alias]
+	save = commit -a -m "Save"
+	co = checkout
+	logs = log --all --graph --decorate --oneline
+  s = status
+  b = branch
+  aa = add .
+  ps=push
+  pl=pull
+[credential]
+	helper = store

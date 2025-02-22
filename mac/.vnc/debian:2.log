@@ -1,0 +1,22 @@
+
+New Xtigervnc server 'debian:2 (qluo)' on port 5902 for display :2.
+Use xtigervncviewer -SecurityTypes VncAuth,TLSVnc -passwd /tmp/tigervnc.fyNDsp/passwd debian:2 to connect to the VNC server.
+
+The Xtigervnc server cleanly exited!
+ 08:40:58 2023
+ vncext:      VNC extension running!
+ vncext:      Listening for VNC connections on all interface(s), port 5902
+ vncext:      created VNC server for screen 0
+[mi] mieq: warning: overriding existing handler (nil) with 0x55845a04a180 for event 2
+[mi] mieq: warning: overriding existing handler (nil) with 0x55845a04a180 for event 3
+3NI3X0 New Xtigervnc server 'debian:2 (qluo)' on port 5902 for display :2.
+3NI3X0 Use xtigervncviewer -SecurityTypes VncAuth,TLSVnc -passwd /tmp/tigervnc.fyNDsp/passwd debian:2 to connect to the VNC server.
+** Message: 08:40:58.390: main.vala:101: Session is LXDE
+** Message: 08:40:58.390: main.vala:102: DE is LXDE
+** Message: 08:40:58.397: main.vala:133: log directory: /home/qluo/.cache/lxsession/LXDE
+** Message: 08:40:58.397: main.vala:134: log path: /home/qluo/.cache/lxsession/LXDE/run.log
+
+Thu Jul 13 08:41:15 2023
+ ComparingUpdateTracker: 0 pixels in / 0 pixels out
+ ComparingUpdateTracker: (1:-nan ratio)
+Openbox-Message: 在打开DISPLAY环境变量所指定的X显示时失败。

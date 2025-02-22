@@ -1,0 +1,20 @@
+[user]
+	email = luoqi754@gmail.com
+	name = eda_all
+    password = Aa1849639437@
+[credential]
+    helper = store
+; [push]
+	; default = simple
+[safe]
+	directory = /home/ICer/work_space/chipyard
+[color]
+    ui=true
+[alias]
+    save=commit -a -m "Save"
+    co=checkout
+    logs=log --all --graph  --decorate --oneline
+    s=status
+    aa=add .
+    ps=push
+    pl=pull

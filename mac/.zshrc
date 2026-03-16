@@ -1,4 +1,3 @@
-# Functions
 export NO_AT_BRIDGE=1 
 source ~/.shell/functions.sh
 export LSCOLORS=bxfxhxhxgxhxhxgxgxbxbx
@@ -134,3 +133,7 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 # for ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/Cellar/ruby/3.3.5/bin:$PATH"
+
+# Java Home for Mill
+export JAVA_HOME=$(/usr/libexec/java_home)
+

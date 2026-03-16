@@ -11,6 +11,8 @@ alias sshl='ssh_login'
 alias rmd="/Applications/Typora.app/Contents/MacOS/Typora &"
 alias csdn="source /Users/qluo/work_space/work_space/bin/activate; python /Users/qluo/work_space/scripts_ic/csdn.py"
 
+alias api='sh ~/.claude/api.sh'
+
 # ls aliases
 alias ra='ranger'
 alias ll='ls -lh'

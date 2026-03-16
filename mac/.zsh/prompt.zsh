@@ -299,18 +299,20 @@ function PR_VARS() {
     done < <(git exec cat .showvars 2>/dev/null)
 }
 
-# # Prompt
+# # Prompt (two-line: info on top, input arrow below)
+_GIT_PROMPT_INFO=""
+
 function PCMD() {
     if (( PROMPT_MODE == 0 )); then
         if $_vars_multiline; then
-            echo "$(PR_VARS)$(PR_EXTRA)$(PR_DIR) $(PR_ERROR)$(PR_ARROW) " # space at the end
+            echo "$(PR_VARS)$(PR_EXTRA)$(PR_DIR)${_GIT_PROMPT_INFO}\n$(PR_ERROR)$(PR_ARROW) "
         else
-            echo "$(PR_EXTRA)$(PR_DIR)$(PR_VARS) $(PR_ERROR)$(PR_ARROW) " # space at the end
+            echo "$(PR_EXTRA)$(PR_DIR)$(PR_VARS)${_GIT_PROMPT_INFO}\n$(PR_ERROR)$(PR_ARROW) "
         fi
     elif (( PROMPT_MODE == 1 )); then
-        echo "$(PR_EXTRA)$(PR_DIR 1) $(PR_ERROR)$(PR_ARROW) " # space at the end
+        echo "$(PR_EXTRA)$(PR_DIR 1)${_GIT_PROMPT_INFO}\n$(PR_ERROR)$(PR_ARROW) "
     else
-        echo "$(PR_EXTRA)$(PR_ERROR)$(PR_ARROW) " # space at the end
+        echo "$(PR_EXTRA)$(PR_ERROR)$(PR_ARROW) " # minimal mode stays single-line
     fi
 }
 
@@ -353,7 +355,7 @@ function precmd() {
 
 function async_prompt_complete() {
     # read from fd
-    RPROMPT="$(<&$1)"
+    _GIT_PROMPT_INFO="$(<&$1)"
 
     # remove the handler and close the fd
     zle -F "$1"
